@@ -22,7 +22,7 @@ class CTPLConan(ConanFile):
 
     def build(self):
         cmake = CMake(self)
-        cmake.configure()
+        cmake.configure(source_folder="CTPL")
         cmake.install()
 
     def package(self):
